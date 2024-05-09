@@ -1,47 +1,57 @@
 /**
  *
- * @author Paulo Ricardo Gomes Granjeiro
+ * Author: Paulo Ricardo Gomes Granjeiro
  * Student Number: 041118057
  * Course: CST8284 813
  * Professor: Natalie Gluzman
  * Date:2024/01/08
  */
 
+
+
+/**
+ * @author Paulo Ricardo Gomes Granjeiro
+ */
+
 public class ButtonCounter		{
 	/** this variable is private to this class and it will be used
-	 * to count the clicks	
-	 */
+	 * to count the clicks
+	 * 				*/
 	private int count;
 
 	/**
-	 * Get the number of clicks. It get the private variable count from this class
+	 * Get the number of clicks. It get the variable count from this class
+	 *@param
+	 *@return an <code>integer</code> showing the amount of clicks
+	 *
 	 */
 	public int getCount()		{
 		return this.count;
 	}
 
+
 	/**
-	 *This method will increment the value of the count variable by 1.
+	 *
+	 *Write Javadoc for the method function, 
+	 *parameters if any, and return data type if any.
 	 */
 	public void add()	{
-		this.count = (this.count + 1);
+		/*	TODO: Implement the statement(s) to increment the current value of this counter by 1.		*/
 	}
 
 	/**
-	 * this will reset the variable count. It will make it equals to zero.
-	 */
+	 *	TODO:	Write Javadoc for the method function, parameters if any, and return data type if any.
+	*/
 	public void reset()	{
-		this.count = 0;
+		/*	TODO:	Implement the statement(s) that Resets the value of this counter to 0.					*/
+
 	}
 
+
 	/**
-	 * this method will reduce 1 value from count variable. 
-	 * It will not reduce to negative values.
+	 *	TODO:	Write Javadoc for the method function, parameters if any, and return data type if any.
 	 */
 	public void minus()	{
-		this.count = (this.count -1);
-		if (this.count <0){
-			this.count =0;
-		}
+		/*	TODO:	Implement the statements that Undoes a click, but prevents the tally from dropping below 0.		*/
 	}
 }

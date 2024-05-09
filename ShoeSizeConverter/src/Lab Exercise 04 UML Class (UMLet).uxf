@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>460</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>ShoeSizeConversionSystem
+--
+-shoeSize:num
+-gender:String
+--
++ShoeSizeConversionSystem()
++ShoeSizeConversionSystem(shoeSize:num, gender:String)
++getShoeSize():num
++setShoeSize(shoeSize:num):void
++getGender():String
++setGender(gender:String):void
++createReport():String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>490</x>
+      <y>10</y>
+      <w>230</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Program
+--
+
+--
+_+main(args:String[]):void_
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>490</x>
+      <y>100</y>
+      <w>230</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>UML class diagrams by
+Junior Programmer</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
