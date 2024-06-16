@@ -1,0 +1,7 @@
+com\algonquin\cst8288\assignment1\controller\Main.class
+com\algonquin\cst8288\assignment1\emoloyee\Employee.class
+com\algonquin\cst8288\assignment1\persistence\Formatter.class
+com\algonquin\cst8288\assignment1\persistence\JSONFormatter.class
+com\algonquin\cst8288\assignment1\controller\EmployeeController.class
+com\algonquin\cst8288\assignment1\controller\Rate.class
+com\algonquin\cst8288\assignment1\emoloyee\EmployeeService.class
