@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+<!-- Welcome File List -->
+  <welcome-file-list>
+    <welcome-file>ManageInventory.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
+<!--   Servlet Definitions -->
+
+<!--   Servlet Mappings -->
+  <!-- Session Configuration (Optional) -->
+  <session-config>
+    <session-timeout>30</session-timeout> <!-- Session timeout in minutes -->
+  </session-config>
+
+  <!-- Error Handling (Optional) -->
+  <error-page>
+    <error-code>404</error-code>
+    <location>/error404.jsp</location>
+  </error-page>
+  <error-page>
+    <exception-type>java.lang.Throwable</exception-type>
+    <location>/error.jsp</location>
+  </error-page>
+</web-app>

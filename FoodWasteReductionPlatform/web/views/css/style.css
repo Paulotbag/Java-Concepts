@@ -1,0 +1,263 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul. 28, 2024, 6:09:00 p.m.
+    Author     : khush
+*/
+/* Start of Structure */
+/* Generic Page Structure */
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+}
+
+.container {
+  height: 200px;
+  position: relative;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+/* Generic Table Structure */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75vh;
+}
+
+.grid-container .grid-item:nth-child(4n + 4) {
+  display: flex;
+  justify-content: center;
+  gap: 0.75vh;
+}
+
+/* Generic Popover Structure */
+.exit-btn {
+  position: absolute;
+}
+
+.popover-label {
+  align-self: flex-start;
+}
+
+.popover-fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popover-select {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.shadow {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* End of Structure */
+
+/* Start of Skin */
+:root {
+  --primary-background-color: #f0f2f5; /* Very light grey for a neutral background */
+  --primary-text-color: #333; /* Dark grey for good readability */
+  --primary-border-color: #d1d1d1; /* Light grey for subtle borders */
+
+  --secondary-background-color: #ffffff; /* White for grid elements and popups */
+  --secondary-text-color: #333; /* Dark grey for readability */
+  --secondary-border-color: #e0e0e0; /* Very light grey for subtle borders */
+
+  --accent-background-color: #34495e; /* Deep blue for contrast */
+  --accent-text-color: #ffffff; /* White for readability against dark background */
+  --accent-border-color: #34495e; /* Matching border color for consistency */
+
+  --btn-background-color: #1abc9c; /* Teal for buttons to stand out */
+  --btn-text-color: white; /* White for contrast against teal */
+  --btn-border-color: #16a085; /* Slightly darker teal for border */
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+}
+
+.primary-style.bg {
+  background-color: var(--primary-background-color);
+  border: 0.075vh solid var(--primary-border-color);
+}
+
+.primary-style.txt {
+  color: var(--primary-text-color);
+}
+
+.secondary-style.bg {
+  background-color: var(--secondary-background-color);
+  border: 0.075vh solid var(--secondary-border-color);
+}
+
+.secondary-style.txt {
+  color: var(--secondary-text-color);
+}
+
+.accent-style.bg {
+  background-color: var(--accent-background-color);
+  border: 0 solid var(--accent-border-color);
+}
+.accent-style.txt {
+  color: var(--accent-text-color);
+}
+
+.btn-style {
+  background-color: var(--btn-background-color);
+  border: 0.02vh solid var(--btn-border-color);
+  padding: 0.5vh 1vh;
+  cursor: pointer;
+  color: var(--btn-text-color);
+  border-radius: 0.5vh;
+  font-size: 1.75vh;
+  width: 100%;
+}
+
+.popover .btn-style {
+  margin: 2vh;
+}
+
+.popover-message {
+  font-size: 2.25vh;
+}
+
+.page-title {
+  font-size: 4vh;
+  text-align: center;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.header,
+.footer {
+  text-align: center;
+  padding: 1vh 0;
+}
+
+.exit-btn {
+  top: 2vh;
+  right: 2vh;
+  font-size: 2vh;
+  text-decoration: none;
+}
+
+.popover {
+  padding: 1.25vh;
+  width: 50%;
+}
+
+.login {
+  padding: 10vh 5vh;
+  width: 30%;
+}
+
+.popover-title {
+  margin-top: 0;
+  text-align: center;
+  font-size: 3vh;
+}
+
+.popover-title-radio {
+  margin-top: 0;
+  font-size: 2vh;
+}
+
+.grid-item {
+  padding: 0.75vh;
+  font-size: 2.25vh;
+}
+
+.main {
+  padding: 2.25vh;
+}
+
+.grid-container {
+  margin-bottom: 1.5vh;
+}
+
+.popover-fieldset,
+.popover-select {
+  border-width: 0;
+}
+
+.popover-input {
+  margin-top: 0.75vh;
+  margin-bottom: 0.75vh;
+  width: 96%; /* Temporary fix */
+  padding: 0.2vh 0.5vh;
+}
+
+.popover-radio {
+  font-size: 2vh;
+}
+
+.popover-label {
+  font-size: 2vh;
+}
+
+.shadow {
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+/* test */
+.a-box .a-divider.a-divider-break:after, .a-color-base-background .a-divider.a-divider-break:after, .a-divider.a-divider-break:after {
+    content: "";
+    width: 100%;
+    background-color: transparent;
+    display: block;
+    height: 1px;
+    border-top: 1px solid var(--secondary-text-color);
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    z-index: 0;
+}
+
+.signup-group p {
+    z-index: 2;
+    position: relative;
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+    box-sizing: border-box;
+    line-height: 1;
+    display: inline-block;
+    padding: 0 8px 0 7px;
+    font-size: 1.5vh;
+}
+
+.signup-group {
+        text-align: center;
+        position: relative;
+        top: 2px;
+        padding-top: 1px;
+        margin-bottom: 14px;
+        line-height: 0;
+}
+
