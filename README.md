@@ -1,4 +1,6 @@
 # Java-Concepts
-Small works and projects using Java to learn basic OOP concepts
+Small works and projects using Java to learn basic and advanced OOP concepts.
 
-You can find my biggest projects using Java in the Pizza and src directories
+Each directory in this repository is an individual project.
+
+Clone each directory individualy to access specific project or clone the whole repository to access all projects.
